@@ -1,0 +1,503 @@
+@media only screen and (max-width: 667px) {
+    .mobile-float-none {
+        float: none !important;
+    }
+    .mobile-center {
+        text-align: center !important;
+    }
+    .form-area .pb_form_v1.login-form {
+        padding-left: 56px;
+        padding-top: 22px;
+    }
+
+    .online-booking {
+        margin-bottom: 8px !important;
+    }
+
+    .form-area .pb_form_v1.registration-from {
+        background-size: 100% 100%;
+        padding: 20px 40px;
+        padding-bottom: 3px;
+        padding-left: 55px;
+    }
+
+    .dashboard-img-center img {
+        width: 300px;
+        margin-top: 50px;
+    }
+
+    .relative.user-dashboard-box label {
+        float: left;
+    }
+
+    .relative.user-dashboard-box {
+        margin-top: 0px;
+    }
+
+    .btn-login {
+        padding: 3px 10px;
+    }
+
+    .back-to-reg {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .form-area .pb_form_v1 {
+        padding-top: 40px;
+    }
+
+    .font-15 {
+        font-size: 15px !important;
+    }
+    .font-12 {
+        font-size: 12px !important;
+    }
+    .navbar-brand img {
+        padding: 0;
+        width: 200px;
+    }
+
+    .navbar-brand {
+        width: 80%;
+        text-align: center;
+    }
+
+    .register-btn {
+        margin-top: 0;
+        padding: 3px 10px;
+    }
+
+    .relative {
+        margin-top: 0px;
+    }
+
+    .pb_cover_v3 {
+        margin-top: -10px;
+        padding-bottom: 0;
+    }
+
+    .navbar-brand img {
+        margin: 10px 10px;
+        margin-left: 20%;
+    }
+
+    .pb_navbar .navbar-toggler {
+        /*display: none;*/
+    }
+    .text-center strong {}
+    .form-step span.text {
+        left: -5px;
+    }
+
+    .prev-slides i {
+        font-size: 69px;
+        color: #000;
+        font-weight: 300 !important;
+    }
+
+    .top-discount {
+        position: absolute;
+        top: 8px;
+        left: -10px;
+        width: 110px;
+        z-index: 99 !important;
+    }
+
+    .online-booking {
+        font-size: 20px;
+    }
+
+    .carosel_margin_top {
+        margin-top: 0 !important;
+    }
+
+    .margin_top_59 {
+        margin-top: 17px !important;
+    }
+
+    .sub-heading {
+        text-align: left;
+        font-size: 15px !important;
+    }
+
+    .icon_fav {
+        line-height: 16px;
+        font-size: 13px;
+    }
+
+    .hidden-xs {
+        display: none !important;
+    }
+
+    .show-xs {
+        display: block !important;
+    }
+
+    .form-group {
+        margin-bottom: 7px;
+    }
+
+    .owl-carousel .owl-item .icon_img .fav-icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+        margin-top: 3px;
+    }
+
+    .owl-carousel .owl-item img.small_img {
+        width: 150px !important;
+        padding: 9px;
+        margin-left: 50px;
+    }
+
+    .text p {
+        padding: 0;
+        text-align: center;
+        color: #000;
+    }
+
+    .logo-sections h5 {
+        font-size: 15px !important;
+        color: #000;
+        padding: 14px 0px;
+    }
+
+    .mobile_none {
+        display: none !important;
+    }
+
+    .zoom-form {
+
+        width: 100%;
+        transform: scaleY(.3);
+
+    }
+
+    .width_25 .ones_col {
+        width: 0 !important;
+    }
+
+    .table-sm tr {
+        height: 60px !important;
+    }
+
+    .table-bordered td {
+        border-color: #fab729 !important;
+        color: #000;
+
+        font-size: 12px;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+    .form-margin {
+        margin: -600px 0;
+    }
+
+    .img_ p {
+        padding: 135px 5px !important;
+        border: 1px solid #fab729;
+        color: #000;
+        font-weight: 700;
+    }
+
+    .logos img {
+        width: 161px !important;
+        /*height: 69px;*/
+    }
+
+    .hedding_middle h2 {
+        text-align: center;
+        color: #000;
+        font-size: 24px;
+        font-weight: 600 !important;
+        padding: 27px 0px;
+        line-height: 1.5;
+        margin-bottom: 35px;
+    }
+
+    .company_info {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        padding-right: 3px;
+        position: fixed;
+        top: 97%;
+        right: 24% !important;
+        width: 260px;
+        height: auto;
+        z-index: 9999;
+        margin-top: -21px !important;
+        text-align: center;
+    }
+
+    .img img {
+        width: 100px !important;
+    }
+    .img_ {
+        float: none!important;
+    }
+    .fixed_button {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 3px;
+        position: fixed;
+        top: 73% !important;
+        right: 5% !important;
+        width: 0px;
+        height: auto;
+        z-index: 9999;
+        margin-top: -24px;
+        text-align: center;
+        transform: rotate(270deg);
+    }
+    .img_ img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .google_store {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 3px;
+        position: fixed;
+        top: 93% !important;
+        right: 4% !important;
+        width: 0px;
+        height: auto;
+        z-index: 9999;
+        margin-top: -24px;
+        text-align: center;
+        transform: rotate(270deg);
+        margin-right: 0 !important;
+    }
+    .hedding_middle h2,
+    .hedding_middle h2 span {
+        font-size: 14px !important;
+        font-family: 'Roboto', sans-serif !important;
+        margin-bottom: 20px;
+    }
+    .google_store img {
+        width: 65px;
+    }
+
+    .fixed_button button {
+        font-weight: 700;
+        padding: 1px;
+        font-size: 12px;
+    }
+
+    .instructions h4{
+
+        color: #000;
+        font-weight: 500 !important;
+        font-size: 20px;
+        padding: 0;
+        text-align: justify;
+    }
+    .instructions ol li {
+        color: #000;
+        font-weight: 400 !important;
+        font-size: 13px;
+        text-align: justify;
+        padding: 10px 5px;
+    }
+    .instructions ol{
+        padding-left: 10px !important;
+    }
+    .question_timer{
+        margin: 20px 0px;
+    }
+
+    .instructions p {
+        font-size: 13px;
+        color: #000;
+        padding: 9px;
+        text-align: left;
+    }
+    .question_option {
+        margin: 0;
+    }
+
+    .top .top_text {
+        color: #232d53;
+        margin: 0px 9px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.5;
+        padding-top: 13px;
+    }
+    .button_relative {
+        position: relative;
+        margin-bottom: 10px;
+    }
+    .mobile_icon{
+        display: none;
+    }
+
+    .button_footer p{
+        font-weight: 600;
+        padding: 0 35px;
+        text-align: center;
+    }
+
+    p.instruction_text {
+        text-align: center !important;
+    }
+    .single_icon{
+        width:91%;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .font-14 {
+        font-size: 14px !important;
+    }
+    .font-15 {
+        font-size: 15px !important;
+    }
+    .top-discount {
+        position: absolute;
+        top: 8px !important;
+        left: -21px;
+        width: 156px;
+        z-index: 99 !important;
+    }
+
+    .fixed_button {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 3px;
+        position: fixed;
+        top: 81% !important;
+        right: 5% !important;
+        width: 0px;
+        height: auto;
+        z-index: 9999;
+        margin-top: -24px;
+        text-align: center;
+        transform: rotate(270deg);
+    }
+
+    .google_store {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 3px;
+        position: fixed;
+        top: 93% !important;
+        right: 4% !important;
+        width: 0px;
+        height: auto;
+        z-index: 9999;
+        margin-top: -24px;
+        text-align: center;
+        transform: rotate(270deg);
+        margin-right: -1px !important;
+    }
+    .img_ {
+        float: none!important;
+    }
+    .img_ img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .pb_cover_v3 .heading {
+        margin-bottom: 12px !important;
+        text-align: left;
+    }
+    .hedding_middle h2,
+    .hedding_middle h2 span {
+        font-size: 14px !important;
+        font-family: 'Roboto', sans-serif !important;
+    }
+    .table-bordered td {
+        font-weight: normal;
+        padding: 10px;
+        font-size: 13px;
+    }
+    .left_text h3 {
+        font-weight: normal !important;
+        font-size: 15px;
+    }
+    .mobile_table {
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    .instructions h4{
+
+        color: #000;
+        font-weight: 500 !important;
+        font-size: 20px;
+        padding: 0;
+        text-align: justify;
+    }
+    .instructions ol li {
+        color: #000;
+        font-weight: 400 !important;
+        font-size: 13px;
+        text-align: justify;
+        padding: 10px 5px;
+    }
+    .instructions ol{
+        padding-left: 10px !important;
+    }
+    .question_timer{
+        margin: 20px 0px;
+    }
+    .instructions p {
+        font-size: 13px;
+        color: #000;
+        padding: 9px;
+        text-align: left;
+    }
+    .question_option {
+        margin:0;
+    }
+    .top .top_text {
+        color: #232d53;
+        margin: 0px 9px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.5;
+        padding-top: 13px;
+    }
+    .button_relative {
+        position: relative;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .mobile_icon{
+        display: none;
+    }
+    .button_relative .subject_btn:hover:after{
+
+        background: #35c306;
+        color: #fff !important;
+        content: "Start";
+        top: -1px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        border-radius: 5px;
+        padding:10px 0;
+    }
+    .button_footer p{
+        font-weight: 600;
+        padding: 0 35px;
+        text-align: center;
+    }
+    p.instruction_text {
+        text-align: center !important;
+    }
+
+    .single_icon{
+        width:91%;
+    }
+
+}

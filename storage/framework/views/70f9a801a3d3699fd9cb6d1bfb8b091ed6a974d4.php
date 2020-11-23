@@ -1,0 +1,248 @@
+<div class="modal-dialog modal-md">
+
+    <div class="modal-content printForm">
+
+        <div class="user-dashboard-box relative form-area pb_form_v5 printarea"  id="printarea" style=" background: #fff;      padding: 20px;">
+                <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="row">
+                <div class="col-md-3 print_logo">
+                    <div class="logo">
+                        <img src="<?php echo e(asset('images/default/logo.png')); ?>" style="width: 80px;margin: 15px 0 0 10px;border-radius: 50%;"/>
+                    </div>
+                </div>
+
+                <div class="d-print-none col-md-6">
+                    <div class="print-edit highlight" style="text-align: center">
+
+                        
+
+                    </div>
+                    <div class="information">
+
+                        <h3>Diamond Jubilee 2020</h3>
+                        <h4>Sholla High School & College</h4>
+                        <h5>Applicant Details</h5>
+
+                    </div>
+
+                </div>
+                <div class="col-md-3 pull-right print_information_address">
+                    <div class="row">
+                        <div class="information_address">
+                            <p><span style="font-weight: 600; font-size: 15px"></span><br/>
+
+                                </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="">
+                <h4> Registration Details, <span class="pull-right">Status :
+                        <?php if($userDetails->status==0): ?>
+                            <span class="btn btn-warning"> Pending <i class="fa fa-clock-o"></i></span>
+                        <?php elseif($userDetails->status==1): ?>
+                            <span class="btn btn-info"> Partial Approve </span>
+                        <?php elseif($userDetails->status==2): ?>
+                            <span class="btn btn-success"> Full Approve <i class="fa fa-check"></i></span>
+                        <?php elseif($userDetails->status==3): ?>
+                            <span class="btn btn-danger"> Rejected <i class="fa fa-times"></i></span>
+                        <?php endif; ?></span>
+
+                </h4>
+                <table class="table table-bordered table-striped" role="grid" aria-describedby="example1_info">
+                    <tr>
+                        <th>Name</th>
+                        <td><?php echo e($userData->name); ?></td>
+                    </tr>
+                    <tr>
+                        <th>Father's Name</th>
+                        <td><?php echo e($userDetails->father_name); ?></td>
+                    </tr>
+                    <tr>
+                        <th>Mobile</th>
+                        <td><?php echo e($userData->mobile_no); ?></td>
+                    </tr>
+                    <tr>
+                        <th>Batch</th>
+                        <td><?php echo e($userDetails->userInfoBatch->batch_name); ?></td>
+                    </tr>
+                    <tr>
+                        <th>Village</th>
+                        <td><?php echo e($userDetails->userInfoVillage->village); ?></td>
+                    </tr>
+                    <tr>
+                        <th>Union</th>
+                        <td><?php echo e($userDetails->userInfoUnion->union); ?></td>
+                    </tr>
+                    <tr>
+                        <th>Thanaa/Upazila</th>
+                        <td><?php echo e($userDetails->userInfoThana->thana_upazila); ?></td>
+                    </tr>
+                    <tr>
+                        <th>District</th>
+                        <td><?php echo e($userDetails->userInfoDist->district); ?></td>
+                    </tr>
+
+                    <hr>
+                    <tr>
+                        <th colspan="2" class="text-center text-danger">Ticket & Fee info</th>
+                    </tr>
+
+                    <tr>
+                        <th>Registration Fee</th>
+
+                        <td>
+                            <?php if($userDetails->student_category==1): ?>
+                                <span>1 x 800 = 800</span>
+
+                            <?php elseif($userDetails->student_category==2): ?>
+
+                                <?php if($userDetails->class_name=='Honours' || $userDetails->class_name=='Masters' || $userDetails->class_name=='Eleven' || $userDetails->class_name=='Twelve'): ?>
+                                    <span>1 x 400 = 400 </span>
+                                <?php else: ?>
+                                    <span>1 x 200 =200 </span>
+                                <?php endif; ?>
+
+                            <?php endif; ?>
+
+
+
+                        </td>
+                    </tr>
+
+                    <?php if($userDetails->spouse!=0): ?>
+                        <tr>
+                            <th>Spouse</th>
+                            <td>  &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;500</td>
+                        </tr>
+                    <?php endif; ?>
+
+
+                    <?php if($userDetails->guest_no!=''): ?>
+                        <tr>
+                            <th>Number of Guest</th>
+                            <td> <?php echo e($userDetails->guest_no); ?> x 400 = <?php echo e($userDetails->guest_no*400); ?></td>
+                        </tr>
+                    <?php endif; ?>
+
+                    <?php if($userDetails->children!=''): ?>
+                        <tr>
+                            <th>Number Children</th>
+                            <td> <?php echo e($userDetails->children); ?> x 200 = <?php echo e($userDetails->children*200); ?></td>
+                        </tr>
+                    <?php endif; ?>
+
+
+                    <tr>
+                        <th>Total Ticket </th>
+                        <td><?php echo e($userDetails->ticket_no); ?></td>
+                    </tr>
+                    <tr style="color: #9C27B0">
+                        <th>Total Receivable </th>
+                        <td><?php echo e($userDetails->payable); ?>.Tk</td>
+                    </tr>
+
+                    <tr style="color: #9C27B0">
+                        <th>Payment Method</th>
+                        <td><?php echo e($userDetails->payment_method); ?>
+
+
+                            <?php if($userDetails->payment_method=='bKash'): ?>
+                               ( bKash Charge: <?php echo e(($userDetails->payable*19)/1000); ?>.Tk)
+                                <?php endif; ?>
+
+                        </td>
+                    </tr>
+
+
+                    <?php if($userDetails->paid!=0): ?>
+                    <tr>
+                        <th>Received Amount</th>
+                        <td><?php echo e($userDetails->paid); ?>.Tk</td>
+                    </tr>
+
+                    <?php if(!empty($userDetails->receivedBy)): ?>
+
+                    <tr>
+                        <th>Received By</th>
+                        <td><?php echo e($userDetails->receivedBy->name.', Mobile:'.$userDetails->receivedBy->mobile_no); ?></td>
+                    </tr>
+                    <?php endif; ?>
+                        <?php endif; ?>
+
+                </table>
+            </div>
+
+
+            <?php if($userDetails->status==2): ?>
+            <div class="well" style="background-color: #ff770280;">
+                <?php echo Form::open(['url'=>'user-photo-upload','method'=>'POST','class'=>'registration-from','files'=>true]); ?>
+
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group ">
+                            
+                            <?php if(!empty($userData->image)): ?>
+                            <label class="slide_upload profile-image" for="file"> Update photo
+                                <img id="image_load" src="<?php echo e(asset($userData->image)); ?>" style="max-width: 120px;border: 2px dashed #2783bb; cursor: pointer">
+                            </label>
+                            <?php else: ?>
+                                <label class="slide_upload profile-image" for="file"> Upload photo
+                                    <img id="image_load" src="<?php echo e(asset('images/default/photo.png')); ?>" style="max-width: 120px;border: 2px dashed #2783bb; cursor: pointer">
+                                </label>
+                                <?php endif; ?>
+
+                            <input id="file" style="display:none" name="image" type="file" onchange="photoLoad(this,this.id)" accept="image/*">
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label> &nbsp; </label>
+                            <input type="submit" value="submit" class="btn btn-primary ">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <input type="hidden" name="user_id" value="<?php echo e($userData->id); ?>" />
+                <hr>
+                <?php echo Form::close(); ?>
+
+            </div>
+            <?php endif; ?>
+
+
+            <div class="table-responsive">
+                <div class="note">
+                    <p style="  padding-top: 15px;"><span>NB:</span>This is system Generated Document.</p>
+                    <p>&#169; Sholla High School & College</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div><!-- end modal content-->
+
+</div>
+
+    <script>
+
+        $(function(){
+            $('#printBtn').on('click', function() {
+
+                //Print ele2 with default options
+                $.print(".printForm");
+            });
+        });
+
+    </script>
+<?php /**PATH /home/shollaschoolcoll/public_html/75years/resources/views/backend/student/applicant-photo-upload.blade.php ENDPATH**/ ?>
